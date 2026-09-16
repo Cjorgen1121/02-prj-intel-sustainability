@@ -22,9 +22,21 @@ function updatePageDirection(language) {
 
 function updateLanguageStatus(language) {
   const status = document.querySelector("#language-status");
+  const languageMenu = document.querySelector("#language-menu");
+  const languageNames = {
+    ar: "Arabic",
+    he: "Hebrew",
+    fr: "French",
+    es: "Spanish",
+    en: "English"
+  };
 
   if (status) {
     status.textContent = `Language: ${language.toUpperCase()} (${document.documentElement.dir.toUpperCase()})`;
+  }
+
+  if (languageMenu) {
+    languageMenu.firstChild.textContent = languageNames[language] || "English";
   }
 }
 

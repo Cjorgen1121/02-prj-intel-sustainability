@@ -9,6 +9,7 @@ body {
 }
 
 header {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,12 +49,26 @@ header p {
 }
 
 .language-tools {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 0.75rem;
   margin-top: 2rem;
+}
+
+.language-tools .language-status {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .language-tools {
+    top: 1rem;
+    right: 1rem;
+  }
 }
 
 .language-status {
@@ -172,10 +187,40 @@ body > section:first-of-type > article:focus {
 }
 
 .info-card {
+  position: relative;
   border: 1px solid #d6e0e8;
   border-radius: 0.5rem;
   background-color: #ffffff;
   box-shadow: 0 4px 12px rgb(0 40 94 / 8%);
+}
+
+/* Keeps Bootstrap popovers readable if the CDN stylesheet loads slowly. */
+.popover {
+  position: absolute;
+  z-index: 1080;
+  display: block;
+  max-width: 276px;
+  padding: 0.75rem;
+  color: #212529;
+  text-align: start;
+  background-color: #ffffff;
+  border: 1px solid rgb(0 40 94 / 20%);
+  border-radius: 0.375rem;
+  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+}
+
+.popover-header {
+  margin: 0 0 0.5rem;
+  padding: 0;
+  color: #00285e;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.popover-body {
+  padding: 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
 }
 
 .newsletter-section {
