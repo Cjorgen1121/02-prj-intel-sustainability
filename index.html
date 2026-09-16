@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Intel: Sustainability Through the Ages</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -19,6 +20,23 @@
       to innovation has shaped a more sustainable future for technology
       and our planet.
     </p>
+
+    <div class="language-tools" aria-label="Language tools">
+      <div class="dropdown">
+        <button class="btn btn-light dropdown-toggle" type="button" id="language-menu" data-bs-toggle="dropdown" aria-expanded="false">
+          Choose language
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="language-menu">
+          <li><button class="dropdown-item" type="button" data-language="en">English</button></li>
+          <li><button class="dropdown-item" type="button" data-language="ar">Arabic</button></li>
+          <li><button class="dropdown-item" type="button" data-language="he">Hebrew</button></li>
+          <li><button class="dropdown-item" type="button" data-language="fr">French</button></li>
+          <li><button class="dropdown-item" type="button" data-language="es">Spanish</button></li>
+        </ul>
+      </div>
+      <div id="google_translate_element" class="visually-hidden" aria-hidden="true"></div>
+      <p id="language-status" class="language-status" role="status">Detecting your language...</p>
+    </div>
   </header>
 
   <section>
@@ -132,5 +150,80 @@
     </article>
   </section>
   <p>Scroll to view timeline | Hover over cards to learn more!</p>
+<section class="container-fluid bg-light py-5" aria-labelledby="highlights-heading">
+    <div class="container">
+      <h2 id="highlights-heading" class="text-center mb-4">Sustainability Highlights</h2>
+      <div class="row g-4">
+
+      <!-- Column 1 -->
+      <div class="col-12 col-md-4">
+        <div class="info-card h-100 p-4">
+        <h2>RISE Strategy</h2>
+        <p>
+          Under its RISE (Responsible, Inclusive, Sustainable, Enabling) strategy,
+          Intel sets ambitious 2030 goals, including driving industry-wide
+          progress on climate action, water stewardship, and waste reduction.
+        </p>
+        <!-- Learn More Button -->
+        <button class="btn btn-primary" type="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="RISE Strategy" data-bs-content="RISE stands for Responsible, Inclusive, Sustainable, and Enabling.">Learn More</button>
+        </div>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="col-12 col-md-4">
+        <div class="info-card h-100 p-4">
+        <h2>Commitment</h2>
+        <p>
+          In 2022, Intel pledged to achieve net-zero greenhouse gas emissions
+          (Scope 1 and 2) by 2040. This commitment builds on decades of
+          environmental initiatives and partnerships across the semiconductor
+          industry.
+        </p>
+        <!-- Learn More Button -->
+        <button class="btn btn-primary" type="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Net-Zero Commitment" data-bs-content="Intel aims to reach net-zero Scope 1 and 2 emissions across global operations by 2040.">Learn More</button>
+        </div>
+      </div>
+
+      <!-- Column 3 -->
+      <div class="col-12 col-md-4">
+        <div class="info-card h-100 p-4">
+        <h2>Water &amp; Waste</h2>
+        <p>
+          Intel conserves billions of gallons of water annually and
+          collaborates with local communities to restore watersheds.
+          Intel also upcycles and recycles materials to reduce waste and
+          advance a circular economy.
+        </p>
+        <!-- Learn More Button -->
+        <button class="btn btn-primary" type="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Water and Waste" data-bs-content="Intel works to conserve water, restore watersheds, and reduce waste through reuse and recycling.">Learn More</button>
+        </div>
+      </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Subscription Form -->
+  <section class="newsletter-section" aria-labelledby="newsletter-heading">
+    <div class="container">
+      <h2 id="newsletter-heading">Subscribe to our Newsletter</h2>
+      <form class="row g-3" action="#" method="post">
+        <div class="col-12 col-md-8">
+          <label class="visually-hidden" for="email">Email address</label>
+          <input class="form-control" type="email" id="email" name="email" placeholder="Email address" autocomplete="email" required />
+        </div>
+        <div class="col-12 col-md-4">
+          <button class="btn btn-primary w-100" type="submit">Subscribe</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p class="mb-0">&copy; 2026 Intel Sustainability Journey</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script>
 </body>
 </html>
