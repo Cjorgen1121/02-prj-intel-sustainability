@@ -48,10 +48,13 @@ header p {
   line-height: 1.6;
 }
 
-.language-tools {
+.language-container {
   position: absolute;
   top: 1.5rem;
-  right: 1.5rem;
+  left: 1.5rem;
+}
+
+.language-tools {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -65,9 +68,9 @@ header p {
 }
 
 @media (max-width: 600px) {
-  .language-tools {
+  .language-container {
     top: 1rem;
-    right: 1rem;
+    left: 1rem;
   }
 }
 

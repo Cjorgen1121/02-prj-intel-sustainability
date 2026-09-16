@@ -21,20 +21,22 @@
       and our planet.
     </p>
 
-    <div class="language-tools" aria-label="Language tools">
-      <div class="dropdown">
-        <button class="btn btn-light dropdown-toggle" type="button" id="language-menu" data-bs-toggle="dropdown" aria-expanded="false">
-          English
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="language-menu">
-          <li><button class="dropdown-item" type="button" data-language="ar">Arabic</button></li>
-          <li><button class="dropdown-item" type="button" data-language="he">Hebrew</button></li>
-          <li><button class="dropdown-item" type="button" data-language="fr">French</button></li>
-          <li><button class="dropdown-item" type="button" data-language="es">Spanish</button></li>
-        </ul>
+    <div class="language-container">
+      <div class="language-tools" aria-label="Language tools">
+        <div class="dropdown">
+          <button class="btn btn-light dropdown-toggle" type="button" id="language-menu" data-bs-toggle="dropdown" aria-expanded="false">
+            English
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="language-menu">
+            <li><button class="dropdown-item" type="button" data-language="ar">Arabic</button></li>
+            <li><button class="dropdown-item" type="button" data-language="he">Hebrew</button></li>
+            <li><button class="dropdown-item" type="button" data-language="fr">French</button></li>
+            <li><button class="dropdown-item" type="button" data-language="es">Spanish</button></li>
+          </ul>
+        </div>
+        <div id="google_translate_element" class="visually-hidden" aria-hidden="true"></div>
+        <p id="language-status" class="language-status" role="status">Detecting your language...</p>
       </div>
-      <div id="google_translate_element" class="visually-hidden" aria-hidden="true"></div>
-      <p id="language-status" class="language-status" role="status">Detecting your language...</p>
     </div>
   </header>
 
